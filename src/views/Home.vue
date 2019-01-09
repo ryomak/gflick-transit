@@ -1,18 +1,34 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div>
+		<ProgressNow/>
+		<div class="line">
+			<h3> ラインアット　</h3>
+		</div>
+	</div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import ProgressNow from '@/components/home/index'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
-  }
+    ProgressNow
+  },
+	computed:{
+		teamName(){
+			return 'Hangout'
+		}
+	}
 }
 </script>
+<style lang="scss" scoped>
+$about-color:#DDDDDD;
+$about-back:#64b587;
+#about{
+	img{
+		width:80%
+	}
+}
+</style>

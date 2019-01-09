@@ -2,7 +2,8 @@
 	<div>
 		<ProgressNow/>
 		<div class="line">
-			<h3> ラインアット　</h3>
+			<h3> Line@　</h3>
+			
 		</div>
 	</div>
 </template>
